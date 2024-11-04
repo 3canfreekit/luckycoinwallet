@@ -132,9 +132,9 @@ public:
 
         // AuxPoW parameters
         consensus.nAuxpowChainId = 0x2013;
-        consensus.fStrictChainId = false;  // we set this to false as block is nonAuxPow
-
-        consensus.fAllowLegacyBlocks = true;
+        consensus.nAuxpowStartHeight = 0; // TODO: Change this to the correct height
+        consensus.nBlockAfterAuxpowRewardThreshold = 5;
+        consensus.fStrictChainId = true;
 
         // We do not activate digishield in this consensus
         digishieldConsensus = consensus;
@@ -155,7 +155,6 @@ public:
         // Not implementing AuxPow hardfork yet
         auxpowConsensus = digishieldConsensus;
         auxpowConsensus.nHeightEffective = std::numeric_limits<uint32_t>::max();
-        auxpowConsensus.fAllowLegacyBlocks = true;
 
         // Assemble the binary search tree of consensus parameters
         pConsensusRoot = &digishieldConsensus;
@@ -230,6 +229,7 @@ public:
                         ( 57484, uint256S("0x807fb268c7faabc70cc95c1027cbf1e555834e5bf9e19e01ef785be88853ae88"))
                         ( 69240, uint256S("0x07d2b42e1898d59594b10f26fdc76d4f970a10b4b330237012f48eb489c8d744"))
                         ( 73892, uint256S("0x5b43092ef40969b65878cee7c568e622a4a9d950a130858a10914402797f96b1"))
+                        ( 168312, uint256S("0x26816c8861d283ab9bdf4539e5398f65ae5687b90f62cee28036f6e8387933e8"))
         };
 
         chainTxData = ChainTxData{
@@ -256,6 +256,7 @@ public:
     CTestNetParams() {
         strNetworkID = "test";
 
+        // Not used in LuckyCoin
         consensus.nSubsidyHalvingInterval = 100000;
 
         consensus.nMajorityEnforceBlockUpgrade = 1500;
@@ -315,9 +316,10 @@ public:
         consensus.defaultAssumeValid = uint256S("0x9b7bce58999062b63bfb18586813c42491fa32f4591d8d3043cb4fa9e551541b"); // 10000
 
         // AuxPoW parameters
-        consensus.nAuxpowChainId = 0x0062; // 98 - Josh Wise!
+        consensus.nAuxpowChainId = 0x0062;
+        consensus.nAuxpowStartHeight = 0; // TODO: Change this to the correct height
+        consensus.nBlockAfterAuxpowRewardThreshold = 5;
         consensus.fStrictChainId = true;
-        consensus.fAllowLegacyBlocks = true;
 
         // We do not activate digishield in this consensus
         digishieldConsensus = consensus;
@@ -338,7 +340,6 @@ public:
         // Not implementing AuxPow hardfork yet
         auxpowConsensus = digishieldConsensus;
         auxpowConsensus.nHeightEffective = std::numeric_limits<uint32_t>::max();
-        auxpowConsensus.fAllowLegacyBlocks = true;
 
         // Assemble the binary search tree of consensus parameters
         pConsensusRoot = &digishieldConsensus;
@@ -407,6 +408,7 @@ private:
 public:
     CRegTestParams() {
         strNetworkID = "regtest";
+
         // Not used in LuckyCoin
         consensus.nSubsidyHalvingInterval = 100000;
 
@@ -468,9 +470,10 @@ public:
         consensus.defaultAssumeValid = uint256S("0x2c05ea6918e28ca2d216c6518940c8782c09bebfe705d792155465662e275351"); // 10000
 
         // AuxPoW parameters
-        consensus.nAuxpowChainId = 0x0062; // 98 - Josh Wise!
+        consensus.nAuxpowChainId = 0x0062;
+        consensus.nAuxpowStartHeight = 0; // TODO: Change this to the correct height
+        consensus.nBlockAfterAuxpowRewardThreshold = 5;
         consensus.fStrictChainId = true;
-        consensus.fAllowLegacyBlocks = true;
 
         // We do not activate digishield in this consensus
         digishieldConsensus = consensus;
@@ -491,7 +494,6 @@ public:
         // Not implementing AuxPow hardfork yet
         auxpowConsensus = digishieldConsensus;
         auxpowConsensus.nHeightEffective = std::numeric_limits<uint32_t>::max();
-        auxpowConsensus.fAllowLegacyBlocks = false;
 
         // Assemble the binary search tree of consensus parameters
         pConsensusRoot = &digishieldConsensus;
