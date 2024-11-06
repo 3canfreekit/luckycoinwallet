@@ -85,7 +85,7 @@ struct Params {
     int nAuxpowStartHeight;
     int nBlockAfterAuxpowRewardThreshold;
     bool fStrictChainId;
-    int nLegacyBlocksBefore; // -1 for "always allow"
+    int nLegacyBlocksBefore = -1; // -1 means always allow legacy blocks
 
     /** Height-aware consensus parameters */
     uint32_t nHeightEffective; // When these parameters come into use
