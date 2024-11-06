@@ -1005,7 +1005,7 @@ void AuxMiningCheck()
         LOCK(cs_main);
         const auto auxpowStart = Params().GetConsensus(chainActive.Height() + 1).nAuxpowStartHeight;
         if (chainActive.Height() + 1 < auxpowStart)
-            throw std::runtime_error("getauxblock method is not yet available");
+            throw std::runtime_error("getauxblock method will be available after block " + std::to_string(auxpowStart));
     }
 }
 
