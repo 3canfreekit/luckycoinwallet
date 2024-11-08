@@ -1,79 +1,56 @@
 <h1 align="center">
-<img src="https://luckycoinfoundation.org/images/logo.png" data-canonical-src="https://luckycoinfoundation.org/images/logo.png" width="250" height="250" alt="LuckyCoin"/>
+<img src="https://pbs.twimg.com/media/GZhUfpHWwA8P4B_?format=png&name=small" data-canonical-src="https://pbs.twimg.com/media/GZhUfpHWwA8P4B_?format=png&name=small" width="250" height="250" alt="LuckyCoin"/>
 <br/><br/>
 LuckyCoin [LKY]
 </h1>
 
 <div align="center">
 
-[![LuckyCoinBadge](https://img.shields.io/badge/LuckyCoin-Coin-blue)](https://luckycoin.com)
-[![MuchWow](https://img.shields.io/badge/OG-Coin-yellow.svg)](https://luckycoin.com)
+[![LuckyCoinBadge](https://img.shields.io/badge/LuckyCoin-Coin-blue)](https://luckycoinfoundation.org)
+[![MuchWow](https://img.shields.io/badge/OG-Coin-yellow.svg)](https://luckycoinfoundation.org)
 
 </div>
 
-DO NOT USE THIS CODE. THIS IS AN EXPERIMENT. DO NOT USE THIS CODE. THIS IS AN EXPERIMENT. DO NOT USE THIS CODE. THIS IS AN EXPERIMENT. DO NOT USE THIS CODE. THIS IS AN EXPERIMENT. DO NOT USE THIS CODE. THIS IS AN EXPERIMENT. DO NOT USE THIS CODE. THIS IS AN EXPERIMENT. DO NOT USE THIS CODE. THIS IS AN EXPERIMENT. DO NOT USE THIS CODE. THIS IS AN EXPERIMENT. 
+**Disclaimer:** This code is experimental and not audited. By using this code, you acknowledge the risks involved, including potential loss of funds or exploits. Use at your own risk.
 
-BY USING THIS CODE YOU ARE AWARE THAT YOU ARE IGNORING THE FOLLOWING WARNING AND PUT YOURSELF IN A POTENTIAL LOST OF FUNDS OR EXPLOIT. THIS CODE HAS NOT BEEN AUDITED IN ANY MEAN AND SHOULD **NOT** BE USED. USER HAVE BEEN WARNED.
+## What's New in V3.0.0?
+This release is an update aimed at modernizing the Luckycoin blockchain with AuxPow support for merged mining. This version is intended for experimental purposes only and includes a comprehensive set of features aligned with the latest blockchain standards. **Note:** Ensure thorough testing before any production use.
 
-## Why 2.0.0?
-This repo have been made in an experiment to revive the luckycoin chain. It includes an upgraded version of the Bitcoin protocol that is required to run mempool, electrs and more. Please note that changes done to this version have not been tested under any circumstance and should not be used with tokens. Use at your OWN risks. The developper(s) are not responsible for your actions.
+## Features
+- **AuxPow Support**: Enables merged mining with other compatible blockchains.
+- **Updated Dependencies**: Incorporates updates to critical libraries for improved performance and compatibility.
+- **Optimized Performance**: Various improvements for better stability and efficiency.
 
-## This branch contains the latest version 2.0.0 of the Luckycoin network.
+## Technical Specifications
+- **Block Time**: 1 minute target
+- **Initial Reward**: 88 coins per block, halving every 2 months (100,000 blocks)
+- **Total Supply**: ~20 million coins
+- **Port**: 9917 (connection), 9918 (RPC)
+- **Random Bonus Blocks**: Variable reward system as detailed below.
 
-Luckycoin Client v2.0.0
-=======================
+### Random Bonus Blocks
+**First 50,000 Blocks (Initial Month)**:
+- 5% chance of 188 coins/block
+- 1% chance of 588 coins/block
+- 0.01% chance of 5,888 coins/block (approximately 5 occurrences expected)
 
-Luckycoin - a fork of Litecoin version with random bonus blocks. Like Litecoin it uses scrypt as a proof of work scheme.
+**Post 50,000 Blocks**:
+- 5% chance of 2x normal coins
+- 1% chance of 5x normal coins
+- 0.01% chance of 58x normal coins
 
-- 1 min block target
-- Difficulty retargets every 20 min with accelerated diff adjustment in the beginning
-- Initially 88 coins per block, halves every 2 months (100,000 blocks)
-- Total around 20 millions coins
-- connection port is 9917, RPC-port 9918
+## Official Resources
+Visit the [Luckycoin website](https://luckycoinfoundation.org) for more details, updates, and community engagement.
 
-Random Super-blocks:
-For the 1st 50000 blocks (1st month)
-- 5% chances 188 coins/block
-- 1% chances 588 coins/block
-- 0.01% chances 5888 coins/block (so expect 5 such blocks)
+## Development Process
+Developers should work on their own branches and submit pull requests when features or fixes are ready. The master branch is tested regularly but is not guaranteed to be stable. Feature branches are used for significant updates involving multiple contributors.
 
-    After 50000 blocks
-    - 5% chances 2 times the normal coins (i.e. if normal is 88 coins, you get 176 coins)
-    - 1% chances 5 times the normal coins
-    - 0.01% chance 58 times the normal coins
+### Guidelines:
+- Expect review and rework if necessary.
+- Pull requests may be closed after 15 days of inactivity, marked as 'stagnant'.
 
+## Contribution
+Contributions are welcomed. Ensure that your pull requests adhere to project standards and are thoroughly tested.
 
-Official Luckycoin Website and Community Forum
-==================================
-
-Please visit the official Luckycoin website for more information.
-https://luckycoinfoundation.org
-
-
-Development process
-===================
-
-Developers work in their own trees, then submit pull requests when
-they think their feature or bug fix is ready.
-
-The patch will be accepted if there is broad consensus that it is a
-good thing.  Developers should expect to rework and resubmit patches
-if they don't match the project's coding conventions (see coding.txt)
-or are controversial.
-
-The master branch is regularly built and tested, but is not guaranteed
-to be completely stable. Tags are regularly created to indicate new
-official, stable release versions of Luckycoin.
-
-Feature branches are created when there are major new features being
-worked on by several people.
-
-From time to time a pull request will become outdated. If this occurs, and
-the pull is no longer automatically mergeable; a comment on the pull will
-be used to issue a warning of closure. The pull will be closed 15 days
-after the warning if action is not taken by the author. Pull requests closed
-in this manner will have their corresponding issue labeled 'stagnant'.
-
-Issues with no commits will be given a similar warning, and closed after
-15 days from their last activity. Issues closed in this manner will be
-labeled 'stale'. 
+## License
+Released under the MIT License. See `COPYING` for more information.
