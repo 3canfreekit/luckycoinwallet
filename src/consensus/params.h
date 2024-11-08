@@ -85,7 +85,6 @@ struct Params {
     int nAuxpowStartHeight;
     int nBlockAfterAuxpowRewardThreshold;
     bool fStrictChainId;
-    int nLegacyBlocksBefore = -1; // -1 means always allow legacy blocks
 
     /** Height-aware consensus parameters */
     uint32_t nHeightEffective; // When these parameters come into use
@@ -100,9 +99,9 @@ struct Params {
      */
     bool AllowLegacyBlocks(unsigned nHeight) const
     {
-        if (nLegacyBlocksBefore < 0)
+        if(nAuxpowStartHeight < 0) // To always allow legacy blocks, set nAuxpowStartHeight to -1
             return true;
-        return static_cast<int> (nHeight) < nLegacyBlocksBefore;
+        return static_cast<int> (nHeight) < nAuxpowStartHeight;
     }
 };
 } // namespace Consensus

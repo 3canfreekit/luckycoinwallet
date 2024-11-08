@@ -132,7 +132,7 @@ public:
 
         // AuxPoW parameters
         consensus.nAuxpowChainId = 0x2013;
-        consensus.nAuxpowStartHeight = 0; // TODO: Change this to the correct height
+        consensus.nAuxpowStartHeight = 173700; // -1 will always allow legacy blocks
         consensus.nBlockAfterAuxpowRewardThreshold = 5;
         consensus.fStrictChainId = true;
 
@@ -233,6 +233,7 @@ public:
                         ( 170421, uint256S("0x647540c0bce26bdcc4f863a6163c1dc86824899835af31cb9d649a85caca38ec"))
                         ( 170924, uint256S("0x28e1a097871c66d25021091fbd68d0f0301d3fc0b106e8d7c6e190e39a20b335"))
                         ( 172330, uint256S("0x8458c3eeda44dc11352edad04e0eb69ae898c69c0dded3b3903b37f5bf352555"))
+                        ( 173502, uint256S("0x23bf72398801d9d7cf6d191d06afe49641ec450a8eb960936091bad69d9fb006"))
         };
 
         chainTxData = ChainTxData{
@@ -320,7 +321,7 @@ public:
 
         // AuxPoW parameters
         consensus.nAuxpowChainId = 0x0062;
-        consensus.nAuxpowStartHeight = 0; // TODO: Change this to the correct height
+        consensus.nAuxpowStartHeight = 0; // -1 will always allow legacy blocks
         consensus.nBlockAfterAuxpowRewardThreshold = 5;
         consensus.fStrictChainId = true;
 
@@ -474,7 +475,7 @@ public:
 
         // AuxPoW parameters
         consensus.nAuxpowChainId = 0x0062;
-        consensus.nAuxpowStartHeight = 0; // TODO: Change this to the correct height
+        consensus.nAuxpowStartHeight = 0; // -1 will always allow legacy blocks
         consensus.nBlockAfterAuxpowRewardThreshold = 5;
         consensus.fStrictChainId = true;
 
