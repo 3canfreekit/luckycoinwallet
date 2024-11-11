@@ -4,7 +4,7 @@
 
 The easiest way to install the latest version of the LuckyCoin Core software is
 by to download the latest precompiled binaries for your platform from the
-[release page](https://github.com/luckycoin/luckycoin/releases). Currently,
+[release page](https://github.com/LuckyCoinProj/luckycoinV3/releases). Currently,
 binaries are released for the following platforms:
 
 - Windows, 64-bit and 32-bit
@@ -27,14 +27,14 @@ these dependencies.
 
 ### Compiling using system-provided libraries
 
-  The following are developer notes on how to build LuckyCoin on your native
-  platform, using the dependencies as provided by your system's package manager.
-  They are not complete guides, but include notes on the necessary libraries,
-  compile flags, etc.
+The following are developer notes on how to build LuckyCoin on your native
+platform, using the dependencies as provided by your system's package manager.
+They are not complete guides, but include notes on the necessary libraries,
+compile flags, etc.
 
-  - [Unix Build Notes](doc/build-unix.md)
-  - [Windows Build Notes](doc/build-windows.md)
-  - [macOS Build Notes](doc/Building-LuckyCoin-1.14-for-Mac.md)
+- [Unix Build Notes](doc/build-unix.md)
+- [Windows Build Notes](doc/build-windows.md)
+- [macOS Build Notes](doc/Building-LuckyCoin-1.14-for-Mac.md)
 
 ### Testing
 

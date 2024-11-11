@@ -4,9 +4,9 @@ LuckyCoin Core is open source software, and we would welcome contributions
 which improve the state of the software. For those wanting to discuss changes,
 or look for work that needs doing, please see:
 
-* [Help requests](https://github.com/luckycoin/luckycoin/labels/help%20wanted)
-* [Projects](https://github.com/luckycoin/luckycoin/projects)
-* [luckycoindev on reddit](https://www.reddit.com/r/luckycoindev/)
+- [Help requests](https://github.com/LuckyCoinProj/luckycoinV3/labels/help%20wanted)
+- [Projects](https://github.com/LuckyCoinProj/luckycoinV3/projects)
+- [luckycoindev on reddit](https://www.reddit.com/r/luckycoindev/)
 
 ## Branch Strategy
 
@@ -24,12 +24,12 @@ facilitates social contribution, easy testing and peer review.
 
 To contribute a patch, the workflow is as follows:
 
-  - Fork the repository in GitHub, and clone it your development machine.
-  - Create a topic branch from the relevant development branch.
-  - Commit changes to the branch.
-  - Test your changes, which **must** include the unit and RPC tests passing.
-  - Push topic branch to your copy of the repository.
-  - Raise a Pull Request via GitHub.
+- Fork the repository in GitHub, and clone it your development machine.
+- Create a topic branch from the relevant development branch.
+- Commit changes to the branch.
+- Test your changes, which **must** include the unit and RPC tests passing.
+- Push topic branch to your copy of the repository.
+- Raise a Pull Request via GitHub.
 
 The coding conventions in the [developer notes](doc/developer-notes.md) must be
 adhered to.
@@ -54,7 +54,6 @@ references to any discussions (for example other tickets or mailing list
 discussions). At this stage one should expect comments and review from other
 contributors. You can add more commits to your pull request by committing them
 locally and pushing to your fork until you have satisfied feedback.
-
 
 ## Squashing Commits
 
@@ -82,14 +81,12 @@ the respective change set.
 The length of time required for peer review is unpredictable and will vary
 between pull requests.
 
-
 ## Pull Request Philosophy
 
 Pull Requests should always be focused. For example, a pull request could add a
 feature, fix a bug, or refactor code; but not a mixture. Please avoid submitting
 pull requests that attempt to do too much, are overly large, or overly complex
 as this makes review difficult.
-
 
 ### Features
 
@@ -98,7 +95,6 @@ and maintenance that feature may require after inclusion. Before proposing a new
 feature that will require maintenance, please consider if you are willing to
 maintain it (including bug fixing). If features get orphaned with no maintainer
 in the future, they may be removed.
-
 
 ### Refactoring
 
@@ -110,7 +106,6 @@ releases will automatically benefit from these.
 
 When refactoring Dogecoin-specific code, please keep refactoring requests short,
 low complexity and easy to verify.
-
 
 ## "Decision Making" Process
 
@@ -129,15 +124,15 @@ take into account the consensus among frequent contributors.
 
 In general, all pull requests must:
 
-  - have a clear use case, fix a demonstrable bug or serve the greater good of
-    Dogecoin;
-  - be peer reviewed;
-  - have unit tests and functional tests;
-  - follow code style guidelines;
-  - not break the existing test suite;
-  - where bugs are fixed, where possible, there should be unit tests
-    demonstrating the bug and also proving the fix. This helps prevent
-    regressions.
+- have a clear use case, fix a demonstrable bug or serve the greater good of
+  Dogecoin;
+- be peer reviewed;
+- have unit tests and functional tests;
+- follow code style guidelines;
+- not break the existing test suite;
+- where bugs are fixed, where possible, there should be unit tests
+  demonstrating the bug and also proving the fix. This helps prevent
+  regressions.
 
 The following patch types are expected to have significant discussion before
 approval and merge:
@@ -148,7 +143,6 @@ approval and merge:
 While each case will be different, one should be prepared to expend more time
 and effort than for other kinds of patches because of increased peer review
 and consensus building requirements.
-
 
 ### Peer Review
 
@@ -168,7 +162,6 @@ Where a patch set proposes to change the Dogecoin consensus, it must have been
 discussed extensively, be accompanied by widely discussed documentation and have
 a generally widely perceived technical consensus of being a worthwhile change,
 based on the judgement of the maintainers.
-
 
 ### Merging pull requests
 
@@ -190,7 +183,7 @@ these are clearly marked as such, at maintainer discretion.
 
 ## Copyright
 
-By contributing to this repository, you agree to license your work under the 
-MIT license unless specified otherwise in `contrib/debian/copyright` or at 
-the top of the file itself. Any work contributed where you are not the original 
+By contributing to this repository, you agree to license your work under the
+MIT license unless specified otherwise in `contrib/debian/copyright` or at
+the top of the file itself. Any work contributed where you are not the original
 author must contain its license header with the original author(s) and source.
