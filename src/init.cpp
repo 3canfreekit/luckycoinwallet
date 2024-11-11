@@ -512,8 +512,8 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/luckycoin-community/luckycoin>";
-    const std::string URL_WEBSITE = "<https://github.com/luckycoin-community/luckycoin>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/LuckyCoinProj/luckycoinV3>";
+    const std::string URL_WEBSITE = "<https://github.com/LuckyCoinProj/luckycoinV3>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2013, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +

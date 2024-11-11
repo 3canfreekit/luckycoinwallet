@@ -1,11 +1,11 @@
-NixOS build guide
-------------------------------
+## NixOS build guide
+
 This guide lists the steps necessary to setup and build a full GUI distribution
 of the latest changes on NixOS.
 
 Clone and enter the repo:
 
-    $ git clone https://github.com/luckycoin/luckycoin
+    $ git clone https://github.com/LuckyCoinProj/luckycoinV3
     $ cd luckycoin
 
 Enter the `nix-shell` environment with all the Dogecoin dependencies present:
