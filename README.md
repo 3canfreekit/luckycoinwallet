@@ -11,8 +11,6 @@ LuckyCoin [LKY]
 
 </div>
 
-**Disclaimer:** This code is experimental and not audited. By using this code, you acknowledge the risks involved, including potential loss of funds or exploits. Use at your own risk.
-
 ## What's New in V3.0.0?
 This release is an update aimed at modernizing the Luckycoin blockchain with AuxPow support for merged mining. This version is intended for experimental purposes only and includes a comprehensive set of features aligned with the latest blockchain standards. **Note:** Ensure thorough testing before any production use.
 
@@ -32,7 +30,7 @@ This release is an update aimed at modernizing the Luckycoin blockchain with Aux
 **First 50,000 Blocks (Initial Month)**:
 - 5% chance of 188 coins/block
 - 1% chance of 588 coins/block
-- 0.01% chance of 5,888 coins/block (approximately 5 occurrences expected)
+- 0.01% chance of 5,888 coins/block (approximately 5 occurrences ected)
 
 **Post 50,000 Blocks**:
 - 5% chance of 2x normal coins
