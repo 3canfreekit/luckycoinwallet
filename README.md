@@ -12,7 +12,7 @@ LuckyCoin [LKY]
 </div>
 
 ## What's New in V3.0.0?
-This release is an update aimed at modernizing the Luckycoin blockchain with AuxPow support for merged mining. This version is intended for experimental purposes only and includes a comprehensive set of features aligned with the latest blockchain standards. **Note:** Ensure thorough testing before any production use.
+This release is an update aimed at modernizing the Luckycoin blockchain with AuxPow support for merged mining. This version is a comprehensive set of features aligned with the latest blockchain standards. **Note:** Ensure thorough testing before any production use.
 
 ## Features
 - **AuxPow Support**: Enables merged mining with other compatible blockchains.
