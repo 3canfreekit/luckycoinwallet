@@ -368,8 +368,6 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x6f80efd038566e1e3eab3e1d38131604d06481e77f2462235c6a9a94b1f8abf9"));
 
         // nodes with support for servicebits filtering should be at the top
-        //vSeeds.push_back(CDNSSeedData("belscan.io", "testnetseed.belscan.io", true));
-        //vSeeds.push_back(CDNSSeedData("belscan.io", "testnetseeder.belscan.io", true));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,47);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -526,8 +524,6 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x6f80efd038566e1e3eab3e1d38131604d06481e77f2462235c6a9a94b1f8abf9"));
 
         // nodes with support for servicebits filtering should be at the top
-        //vSeeds.push_back(CDNSSeedData("belscan.io", "testnetseed.belscan.io", true));
-        //vSeeds.push_back(CDNSSeedData("belscan.io", "testnetseeder.belscan.io", true));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,47);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
